@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Restaurant Greenhouse</title>
+        <link href="rezervare.css" type="text/css" rel="stylesheet">
+        <script src="rezervare.js"></script>
+    </head>
+    <body onload="on_load()">
+        <div class="antet">
+            <img  alt="No image" src="logo.png">
+        </div>
+        <div class="main">
+            <div class="ptbuton"><a class="back" href="contact.html">INAPOI</a></div>
+            <p id="clock" style="text-align: center;"></p>
+            <form id="formular" action="NIMIC" onsubmit="return validare()">
+                <div>
+                    <label for="nume">Nume</label><br>
+                    <input id="nume" name="nume" type="text" placeholder="Nume">
+                    <div class="error" id="enume">Nume invalid</div>
+                </div>
+                <br>
+                <div>
+                    <label for="prenume">Prenume</label><br>
+                    <input id="prenume" name="prenume" type="text" placeholder="Prenume">
+                    <div class="error" id="eprenume">Prenume invalid</div>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input id="email" name="email" type="text" placeholder="Email">
+                    <div class="error" id="eemail">Email invalid</div>
+                </div>
+                <br>
+                <div>
+                    <label for="telefon">Numar de telefon</label><br>
+                    <input id="telefon" name="telefon" type="text" placeholder="Nr. Tel.">
+                    <div class="error" id="etel">Numar de telefon invalid</div>
+                </div>
+                <br>
+                <div class="tohide" id="hide">
+                    <input id="buton1" type="button" onclick="more()" value="Next">
+                </div>
+                <br>
+
+                <!-- <div class="ascuns">
+                    <label for="lnrpersoane">Numar de persoane</label><br>
+                    <input id="nrpersoane" name="nrpersoane" type="number" min="1" max="10" value="1">
+                </div>
+                <br>
+                <div class="ascuns">
+                    <input type="radio" id="afara" name="alege" value="afara">
+                    <label for="lafara">Masa afara</label><br>
+                    <input type="radio" id="inauntru" name="alege" value="inauntru">
+                    <label for="linauntru">Masa inauntru</label><br>
+                    <input type="radio" id="fara" name="alege" value="Fara preferinta" checked>
+                    <label for="lfara">Fara preferinta</label><br>
+                </div>
+                <br>
+                <div class="ascuns">
+                    <label for="lcand">Data si ora rezervarii</label><br>
+                    <input type="datetime-local" id="cand" name="cand">
+                </div>
+                <br> -->
+
+                <!-- <input class="buton_submit" id="buton_submit" type="submit" value="Submit"> -->
+            </form>
+        </div>
+    </body>
+</html>
